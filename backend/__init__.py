@@ -24,7 +24,7 @@ def register(api: Any) -> None:
     connect = getattr(api, "connection", None)
     if callable(connect):
         try:
-            connect(_connection_row, label="Adobe", program="adobe")
+            connect(_connection_row, label="Adobe MCP", program="adobe")
         except Exception:
             pass
 

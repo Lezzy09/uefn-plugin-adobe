@@ -1,7 +1,7 @@
 {
   "id": "adobe",
   "kind": "plugin",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "label": "Adobe",
   "description": "Control Illustrator and Photoshop from Ducky. COM/ExtendScript is automatic — no Node, no token, no extra MCP row.",
   "min_app_version": "1.0.0",

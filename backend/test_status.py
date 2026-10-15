@@ -126,7 +126,7 @@ def test_register_meta_and_art_tools() -> None:
     assert "illustrator_set_workflow" in api.tools
     assert "photoshop_get_state" in api.tools
     assert len([n for n in api.tools if n.startswith("illustrator_")]) >= 63
-    assert api.connection_kwargs.get("label") == "Adobe"
+    assert api.connection_kwargs.get("label") == "Adobe MCP"
 
 
 def test_adobe_status_tool_json() -> None:
