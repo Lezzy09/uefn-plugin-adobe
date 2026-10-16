@@ -338,7 +338,7 @@
   {
     "name": "get_artboards",
     "title": "Get Artboards",
-    "description": "Get all artboard information",
+    "description": "Get every artboard in the Illustrator document: names, sizes and positions",
     "jsx": "jsx/get_artboards.jsx",
     "activate": false,
     "kind": "read"
@@ -354,7 +354,7 @@
   {
     "name": "get_document_info",
     "title": "Get Document Info",
-    "description": "Get document metadata",
+    "description": "Get the open Illustrator document's metadata: size, color mode, units and file path",
     "jsx": "jsx/get_document_info.jsx",
     "activate": false,
     "kind": "read"
@@ -386,7 +386,7 @@
   {
     "name": "get_guidelines",
     "title": "Get Guidelines",
-    "description": "Get guide information",
+    "description": "Get the guides in the Illustrator document: their positions and orientations",
     "jsx": "jsx/get_guidelines.jsx",
     "activate": false,
     "kind": "read"
@@ -402,7 +402,7 @@
   {
     "name": "get_layers",
     "title": "Get Layers",
-    "description": "Get layer structure as a tree",
+    "description": "Get the Illustrator document's layer structure as a tree, with visibility and locks",
     "jsx": "jsx/get_layers.jsx",
     "activate": false,
     "kind": "read"

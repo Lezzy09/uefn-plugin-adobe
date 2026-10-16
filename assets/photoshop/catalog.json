@@ -241,7 +241,7 @@
   },
   {
     "name": "photoshop_set_layer_visibility",
-    "description": "Show or hide the active layer",
+    "description": "Show or hide the active Photoshop layer",
     "app": "photoshop"
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "name": "photoshop_rename_layer",
-    "description": "Rename the active layer",
+    "description": "Rename the active layer in the open Photoshop document",
     "app": "photoshop"
   },
   {
@@ -276,7 +276,7 @@
   },
   {
     "name": "photoshop_delete_layer",
-    "description": "Delete the active layer",
+    "description": "Delete the active layer in the open Photoshop document",
     "app": "photoshop"
   },
   {
@@ -316,7 +316,7 @@
   },
   {
     "name": "photoshop_rotate_layer",
-    "description": "Rotate the active layer",
+    "description": "Rotate the active Photoshop layer by an angle in degrees",
     "app": "photoshop"
   },
   {
@@ -371,17 +371,17 @@
   },
   {
     "name": "photoshop_select_all",
-    "description": "Select the entire document",
+    "description": "Select the whole Photoshop canvas on the active layer",
     "app": "photoshop"
   },
   {
     "name": "photoshop_deselect",
-    "description": "Deselect all selections",
+    "description": "Clear the current selection in Photoshop so the whole layer is affected",
     "app": "photoshop"
   },
   {
     "name": "photoshop_invert_selection",
-    "description": "Invert the current selection",
+    "description": "Invert the current Photoshop selection to select everything else",
     "app": "photoshop"
   },
   {
@@ -481,97 +481,97 @@
   },
   {
     "name": "photoshop_recipe_remove_background",
-    "description": "remove background",
+    "description": "Recipe: remove the background from a photo with a subject mask",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_enhance_portrait",
-    "description": "enhance portrait",
+    "description": "Recipe: enhance a portrait photo: skin, eyes, contrast and color",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_prepare_for_web",
-    "description": "prepare for web",
+    "description": "Recipe: resize, sharpen and export an image for the web",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_export_social_variants",
-    "description": "export social variants",
+    "description": "Recipe: export an image as social media sizes and crops in one pass",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_apply_color_grade",
-    "description": "apply color grade",
+    "description": "Recipe: apply a color grade to a photo with curves and a color balance look",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_frequency_separation",
-    "description": "frequency separation",
+    "description": "Recipe: frequency separation layers to retouch skin texture and tone apart",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_batch_mockup_replace",
-    "description": "batch mockup replace",
+    "description": "Recipe: put one design into many mockup files by replacing their smart objects",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_organize_layers",
-    "description": "organize layers",
+    "description": "Recipe: tidy a Photoshop document by naming, grouping and ordering its layers",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_gradient_fade",
-    "description": "gradient fade",
+    "description": "Recipe: fade an image out with a gradient layer mask",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_sky_blend",
-    "description": "sky blend",
+    "description": "Recipe: replace or blend the sky in a landscape photo",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_dodge_burn",
-    "description": "dodge burn",
+    "description": "Recipe: dodge and burn layers to lighten and darken parts of a photo",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_remove_distraction",
-    "description": "remove distraction",
+    "description": "Recipe: remove a distracting object from a photo with content-aware fill",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_split_carousel",
-    "description": "split carousel",
+    "description": "Recipe: split a wide image into equal slides for a swipe carousel post",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_batch_watermark",
-    "description": "batch watermark",
+    "description": "Recipe: add a watermark to a batch of images and save them",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_passport_photo",
-    "description": "passport photo",
+    "description": "Recipe: crop and size a passport photo with a plain background",
     "app": "photoshop",
     "recipe": true
   },
   {
     "name": "photoshop_recipe_csv_to_cards",
-    "description": "csv to cards",
+    "description": "Recipe: build cards from a CSV file, one image per row with its text and pictures",
     "app": "photoshop",
     "recipe": true
   }
