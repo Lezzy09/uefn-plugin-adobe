@@ -1,7 +1,7 @@
 {
   "id": "adobe",
   "kind": "plugin",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "label": "Adobe",
   "description": "Control Illustrator, Photoshop and PhotoCraft from Ducky. COM/ExtendScript and PhotoCraft's local control server are automatic — no Node, no token, no extra MCP row.",
   "min_app_version": "1.2.357",
