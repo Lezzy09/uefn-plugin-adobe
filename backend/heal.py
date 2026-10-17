@@ -330,9 +330,12 @@ def ensure_live(app: str = "") -> dict[str, Any]:
 
 
 def cheap_online() -> tuple[bool, str]:
+    from . import photocraft
+
     ai = _win_exe_running("Illustrator.exe")
     ps = _win_exe_running("Photoshop.exe")
-    if ai or ps:
+    pc = photocraft.reachable()
+    if ai or ps or pc:
         bits = []
         if ai:
             docs = [document_name_from_title(t) for t in illustrator_window_titles()]
@@ -340,7 +343,12 @@ def cheap_online() -> tuple[bool, str]:
             bits.append("Illustrator (" + docs[0] + ")" if docs else "Illustrator")
         if ps:
             bits.append("Photoshop")
+        if pc:
+            bits.append("PhotoCraft")
         return True, "Connected · " + " + ".join(bits)
+    # PhotoCraft opens on the first photocraft_* call, so installed counts as ready.
+    if photocraft.find_exe():
+        return True, "Ready · PhotoCraft installed (opens on first use)"
     if illustrator_exes() or photoshop_exes():
         return False, "Offline · Illustrator / Photoshop installed, not running"
-    return False, "Offline · Adobe Illustrator / Photoshop not installed"
+    return False, "Offline · Illustrator / Photoshop / PhotoCraft not installed"
