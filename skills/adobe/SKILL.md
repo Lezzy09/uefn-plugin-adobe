@@ -1,10 +1,10 @@
 ---
 name: adobe
-description: "Drive Illustrator and Photoshop with illustrator_* and photoshop_*. Adobe is in lane for every Ducky — call the tools and do the art."
+description: "Drive Illustrator and Photoshop with illustrator_* and photoshop_*, and PhotoCraft with photocraft_*. Adobe is in lane for every Ducky — call the tools and do the art."
 license: MIT
 metadata:
   label: Adobe
-  version: 3
+  version: 4
   author: UEFN-Ducky
   copyright: Copyright 2026 Mindful Path Company, LLC
   allow_redistribute: true
@@ -70,4 +70,10 @@ Exports → `%LOCALAPPDATA%/UEFN-Ducky/tool_captures/`.
 Coordinates: CMYK/print → document origin; RGB/web → artboard-web.
 Override with `illustrator_set_workflow`.
 
-Details: `skill_read_subskill("adobe", "<id>")` — `connection`, `illustrator`, `photoshop`.
+## PhotoCraft
+
+PhotoCraft (open-source Photoshop clone) is driven with `photocraft_*`, not
+`photoshop_*`. `photocraft_inspect` → `photocraft_commands` → `photocraft_run` →
+inspect again. Any call but `photocraft_status` opens it if needed.
+
+Details: `skill_read_subskill("adobe", "<id>")` — `connection`, `illustrator`, `photoshop`, `photocraft`.

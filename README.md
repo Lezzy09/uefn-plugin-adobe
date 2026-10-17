@@ -20,6 +20,8 @@ Builds go only through the UEFN Ducky build engine (the UEFN-Ducky checkout next
 
 Before a release, install the readable and the compiled zip into a throwaway Ducky and check both register the same tools and workflow nodes, and that they still work after the plugin reloads. After it, check the download with the start-up license check (signature, id and version, compiled), not only the signature.
 
+**PhotoCraft** ([storytold/photocraft](https://github.com/storytold/photocraft)) goes through its own loopback control server instead of COM (`photocraft_*`). The first call launches a controllable copy (`--control 47878`, token file in the plugin's local folder, the home folder as read/write root). Overrides: `PHOTOCRAFT_EXE`, `PHOTOCRAFT_CONTROL_PORT`, `PHOTOCRAFT_ROOT`.
+
 Automations + Pipelines tiles: `adobe.status`, `illustrator.read` / `open` /
 `save` / `export`, `photoshop.read` / `export`, `adobe.jsx`. Drop-in templates
 export the open file or spawn a ducky to draw then export.

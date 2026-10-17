@@ -1,4 +1,5 @@
-"""Adobe — Store desktop plugin. Ducky is the MCP server. COM talks to the apps."""
+"""Adobe — Store desktop plugin. Ducky is the MCP server. COM talks to the Adobe apps,
+PhotoCraft's loopback control server to PhotoCraft."""
 
 from __future__ import annotations
 
@@ -72,6 +73,12 @@ def register(api: Any) -> None:
         register_photoshop_tools(api)
     except Exception as exc:
         api.log(f"Adobe Photoshop tools skipped: {exc}")
+    try:
+        from .photocraft import register_photocraft_tools
+
+        register_photocraft_tools(api)
+    except Exception as exc:
+        api.log(f"PhotoCraft tools skipped: {exc}")
     try:
         from .automations import register_nodes
 

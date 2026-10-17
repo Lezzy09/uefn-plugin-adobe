@@ -54,6 +54,14 @@ def list_entries() -> list[dict[str, Any]]:
             {"name": "adobe_list_tools", "app": "adobe", "description": "Tool census"},
             {"name": "adobe_redeploy", "app": "adobe", "description": "Re-detect COM and relaunch"},
             {"name": "adobe_execute_jsx", "app": "adobe", "description": "Raw ExtendScript escape hatch"},
+            {"name": "photocraft_status", "app": "photocraft", "description": "Install + control connection state"},
+            {"name": "photocraft_commands", "app": "photocraft", "description": "Engine command census"},
+            {"name": "photocraft_run", "app": "photocraft", "description": "Run an engine command by id"},
+            {"name": "photocraft_inspect", "app": "photocraft", "description": "Layer tree, history, selection"},
+            {"name": "photocraft_open", "app": "photocraft", "description": "Open a file under the root"},
+            {"name": "photocraft_save", "app": "photocraft", "description": "Save / export under the root"},
+            {"name": "photocraft_screenshot", "app": "photocraft", "description": "Window PNG"},
+            {"name": "photocraft_call", "app": "photocraft", "description": "Raw control-protocol escape hatch"},
         ]
     )
     return rows
