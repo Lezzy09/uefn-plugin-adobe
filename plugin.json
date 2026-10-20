@@ -3,14 +3,14 @@
   "kind": "plugin",
   "version": "1.0.9",
   "label": "Adobe",
-  "description": "Control Illustrator, Photoshop and PhotoCraft from Ducky. COM/ExtendScript and PhotoCraft's local control server are automatic — no Node, no token, no extra MCP row.",
+  "description": "Control Illustrator, Photoshop, PhotoCraft and VectorCraft from Ducky. COM/ExtendScript and the Craft apps' local control servers are automatic — no Node, no token, no extra MCP row.",
   "min_app_version": "1.2.357",
   "default_enabled": false,
   "secret_keys": [],
   "contributes": {
     "agent.tools": {
       "category": "adobe",
-      "intent_pattern": "\\b(adobe|illustrator|photoshop|artboard|extendscript|photocraft|photo ?craft)\\b",
+      "intent_pattern": "\\b(adobe|illustrator|photoshop|artboard|extendscript|photocraft|photo ?craft|vectorcraft|vector ?craft)\\b",
       "plan_tools": [
         "adobe_status",
         "adobe_list_tools",
@@ -19,7 +19,9 @@
         "illustrator_get_document_structure",
         "photoshop_get_state",
         "photocraft_status",
-        "photocraft_inspect"
+        "photocraft_inspect",
+        "vectorcraft_status",
+        "vectorcraft_inspect"
       ]
     },
     "automations": {

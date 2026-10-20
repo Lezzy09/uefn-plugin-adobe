@@ -22,6 +22,8 @@ Before a release, install the readable and the compiled zip into a throwaway Duc
 
 **PhotoCraft** ([storytold/photocraft](https://github.com/storytold/photocraft)) goes through its own loopback control server instead of COM (`photocraft_*`). The first call launches a controllable copy (`--control 47878`, token file in the plugin's local folder, the home folder as read/write root). Overrides: `PHOTOCRAFT_EXE`, `PHOTOCRAFT_CONTROL_PORT`, `PHOTOCRAFT_ROOT`.
 
+**VectorCraft** ([storytold/vectorcraft](https://github.com/storytold/vectorcraft)), the Illustrator counterpart, works the same way (`vectorcraft_*`). The first call launches a controllable copy (`--control 47879`, the home folder as read/write root); its port takes no token. Overrides: `VECTORCRAFT_EXE`, `VECTORCRAFT_CONTROL_PORT`, `VECTORCRAFT_ROOT`.
+
 Automations + Pipelines tiles: `adobe.status`, `illustrator.read` / `open` /
 `save` / `export`, `photoshop.read` / `export`, `adobe.jsx`. Drop-in templates
 export the open file or spawn a ducky to draw then export.

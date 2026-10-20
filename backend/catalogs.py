@@ -62,6 +62,15 @@ def list_entries() -> list[dict[str, Any]]:
             {"name": "photocraft_save", "app": "photocraft", "description": "Save / export under the root"},
             {"name": "photocraft_screenshot", "app": "photocraft", "description": "Window PNG"},
             {"name": "photocraft_call", "app": "photocraft", "description": "Raw control-protocol escape hatch"},
+            {"name": "vectorcraft_status", "app": "vectorcraft", "description": "Install + control connection state"},
+            {"name": "vectorcraft_commands", "app": "vectorcraft", "description": "Engine command census"},
+            {"name": "vectorcraft_run", "app": "vectorcraft", "description": "Run an engine command by id"},
+            {"name": "vectorcraft_inspect", "app": "vectorcraft", "description": "Layer tree, selection, history"},
+            {"name": "vectorcraft_open", "app": "vectorcraft", "description": "Open a file under the root"},
+            {"name": "vectorcraft_save", "app": "vectorcraft", "description": "Save under the root"},
+            {"name": "vectorcraft_export", "app": "vectorcraft", "description": "Export PNG/SVG/PDF… under the root"},
+            {"name": "vectorcraft_screenshot", "app": "vectorcraft", "description": "Window PNG"},
+            {"name": "vectorcraft_call", "app": "vectorcraft", "description": "Raw control-protocol escape hatch"},
         ]
     )
     return rows
